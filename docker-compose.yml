@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  httpServer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: result/latest
+    ports:
+      - "8080:8080"
